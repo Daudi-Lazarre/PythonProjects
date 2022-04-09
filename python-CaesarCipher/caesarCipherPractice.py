@@ -9,17 +9,17 @@ except ImportError:
 
 symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-print("Welcome to the caesar cipher.\n")
-print("This algorithm ecnrypts messages by shifting the letters over by a certain length.\n")
-print("This length is called a key. For example, if the key is three,\n")
-print("then the letter A will be D.")
+print("\nWelcome to the caesar cipher.")
+print("This algorithm encrypts messages by shifting the letters over by a certain length.")
+print("This length is called a key. For example, if the key is three,")
+print("then the letter A will be D.\n")
 
 # Ask user: encrypt or decrypt?
 
 while True: # Keep asking until the user enters encrypting or decrypting
     print("Do you want to (encrypt) or (decrypt)?")
     
-    response = input("> ").lower()
+    response = input('> ').lower()
     
     if response.startswith("e"):
         mode = "encrypt"
