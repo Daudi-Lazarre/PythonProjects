@@ -51,7 +51,7 @@ message = input("> ")
 
 message = message.upper()
 
-# Stores ecnrypted/decrypted message.
+# Stores encrypted/decrypted message.
 
 translated = ""
 
@@ -61,5 +61,30 @@ for symbol in message:
     if symbol in symbols:
         # Get encrypted/decrypted number for this symbol.
         num = symbols.find(symbol) # Get the number of the symbol
-        if mode == "encrypt"
+        if mode == "encrypt":
+            num += key
+        elif mode == "decrypt":
+            num -= key
+        
+        # Handle wrap-around if num is larger than the length of symbols or less than 0.
 
+        if num >= len(symbols):
+            num -= len(symbols)
+        elif num < 0:
+            num += len(symbols)
+
+        # Add encrypted/decrypted number's symbol to translated.
+        translated += symbols[num]
+    else:
+        # Add symbol without encrypting or decrypting.
+        translated += symbol
+
+# Display the encrypted/decrypted string to the screen:
+print(translated)
+
+try:
+    pyperclip.copy(translated)
+    print("Full {}ed text copied to clipboard.".format(mode))
+except:
+    pass # Do nothing if pyperclip is not installed.
+            
