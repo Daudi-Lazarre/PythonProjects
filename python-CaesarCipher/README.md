@@ -11,9 +11,10 @@ To run a program, do the following:
 ```bash
 cd pythonProjects
 ```
-+ Enter "python insertFileName.py"
++ Enter "python3 insertFileName.py"
++++ Be sure to type "python3" and not just "python"
 ```bash
-python caesarCipherPractice.py
+python3 caesarCipherPractice.py
 ```
 + Run the following commands:
 ```bash

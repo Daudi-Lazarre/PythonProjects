@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # The caesar cipher is a shift cipher that uses addition and subtraction to code a message.
 
 try:
