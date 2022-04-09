@@ -8,9 +8,9 @@ except ImportError:
 
 # (!) You can add numbers and punctuation marks to encrypt symbols.
 
-symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ,.!?:;"
 
-print("\nWelcome to the caesar cipher.")
+print("\nWelcome to the caesar cipher algorithm.")
 print("This algorithm encrypts and decrypts messages by shifting the letters over by a certain length.")
 print("This length is called a key. For example, if the key is three,")
 print("then the letter A will be D.\n")
@@ -83,6 +83,8 @@ for symbol in message:
 # Display the encrypted/decrypted string to the screen:
 print(translated)
 
+
+# Auto-copy the message for user.
 try:
     pyperclip.copy(translated)
     print("\nFull {}ed text copied to clipboard.".format(mode))
