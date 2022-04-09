@@ -8,8 +8,7 @@ Here are some reverberations for your earholes.
 
 https://www.youtube.com/c/jabig
 
-![](https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif)
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif)
 
 # Caesar Cipher
 This method of encryption was created by Julius Caesar. It shifts letters over by a certain length. This length is called a key.
