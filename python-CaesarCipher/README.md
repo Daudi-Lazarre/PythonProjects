@@ -15,4 +15,11 @@ cd pythonProjects
 ```bash
 python caesarCipherPractice.py
 ```
++ Run the following commands:
+```bash
+pip3 install --upgrade pip
+```
+```bash
+pip3 install pyperclip
+```
 + Enjoy!
