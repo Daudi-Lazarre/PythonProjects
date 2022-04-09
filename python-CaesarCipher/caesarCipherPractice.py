@@ -47,3 +47,19 @@ while True: # Keep asking until the user enters something valid
 print("Enter the message to {}.".format(mode))
 message = input("> ")
 
+# Caesar Cipher only works on uppercase letters.
+
+message = message.upper()
+
+# Stores ecnrypted/decrypted message.
+
+translated = ""
+
+# Encrypt/decrypt each symbol in the message.
+
+for symbol in message:
+    if symbol in symbols:
+        # Get encrypted/decrypted number for this symbol.
+        num = symbols.find(symbol) # Get the number of the symbol
+        if mode == "encrypt"
+
