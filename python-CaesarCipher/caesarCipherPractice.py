@@ -21,13 +21,13 @@ while True: # Keep asking until the user enters encrypting or decrypting
     
     response = input('> ').lower()
     
-    if response.startswith("e"):
-        mode = "encrypt"
+    if response.startswith('e'):
+        mode = 'encrypt'
         break
-    elif response.startswith("d"):
-        mode = "decrypt"
+    elif response.startswith('d'):
+        mode = 'decrypt'
         break
-    print("Enter 'encrypt' or 'decrypt'.")
+    print("Enter the letter e or d.")
 
 # User enters their choice.
 

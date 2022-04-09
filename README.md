@@ -6,7 +6,13 @@ To run a program, do the following:
 + Download the repository
 + Open terminal
 + Navigate to the "pythonProjects" folder
+```bash
+cd pythonProjects
+```
 + Enter "python insertFileName.py"
+```bash
+python insertFileName.py
+```
 + Enjoy!
 
 # Caesar Cipher
