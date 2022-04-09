@@ -11,7 +11,7 @@ except ImportError:
 symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 print("\nWelcome to the caesar cipher.")
-print("This algorithm encrypts messages by shifting the letters over by a certain length.")
+print("This algorithm encrypts and decrypts messages by shifting the letters over by a certain length.")
 print("This length is called a key. For example, if the key is three,")
 print("then the letter A will be D.\n")
 
@@ -34,7 +34,7 @@ while True: # Keep asking until the user enters encrypting or decrypting
 
 while True: # Keep asking until the user enters something valid
     maxKey = len(symbols) - 1 # if it were 26, it'd be the same.
-    print("Please enter the key (0 to {}) to use.".format(maxKey))
+    print("\nPlease enter the key (0 to {}) to use.".format(maxKey))
     response = input("> ").upper()
     if not response.isdecimal():
         continue
@@ -45,10 +45,10 @@ while True: # Keep asking until the user enters something valid
 
 # User enters the message to encrypt or decrypt.
 
-print("Enter the message to {}.".format(mode))
+print("\nEnter the message to {}.".format(mode))
 message = input("> ")
 
-# Caesar Cipher only works on uppercase letters.
+# Caesar Cipher makes everything uppercase letters.
 
 message = message.upper()
 
@@ -85,7 +85,7 @@ print(translated)
 
 try:
     pyperclip.copy(translated)
-    print("Full {}ed text copied to clipboard.".format(mode))
+    print("\nFull {}ed text copied to clipboard.".format(mode))
 except:
     pass # Do nothing if pyperclip is not installed.
             
