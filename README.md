@@ -9,4 +9,7 @@ To run a program, do the following:
 + Enter "python insertFileName.py"
 + Enjoy!
 
-# Caesar Cypher
+# Caesar Cipher
+This method of encryption was created by Julius Caesar. It shifts letters over by a certain length. This length is called a key.
+For example, if we had a key of three and we started with the letter A, the result would be D.
+To solve Caesar's cipher, we must know the key!
