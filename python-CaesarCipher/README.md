@@ -16,6 +16,7 @@ cd pythonProjects
 # Be sure to type "python3" and not just "python"
 # I spent over an hour debugging on this. 
 # Don't make my mistake.
+
 python3 caesarCipherPractice.py
 ```
 + Run the following commands:
