@@ -5,7 +5,7 @@ The repository holds python projects including caesar cypher, ROT13 cypher, a ha
 Do you code in silence? I don't.
 Here are some reverberations for your earholes.
 https://www.youtube.com/c/jabig
-![](https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif)
+![Text](https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif)
 
 # Caesar Cipher
 This method of encryption was created by Julius Caesar. It shifts letters over by a certain length. This length is called a key.
