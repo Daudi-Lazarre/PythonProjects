@@ -29,4 +29,4 @@ pip3 install pyperclip
 ```
 + Enjoy!
 
-![Alt Text](https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif)
+![Alt Text](https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif)
