@@ -7,17 +7,17 @@ For example, if the key is 3 and the letter is A, the result will be D.
 To run a program, do the following:
 + Download the repository
 + Open terminal
-+ Navigate to the "pythonProjects" folder
++ Navigate to the "python-CaesarCipher" folder
 ```bash
-cd pythonProjects
+cd pythonProjects/python-CaesarCipher
 ```
-+ Enter "python3 insertFileName.py"
++ Enter "python3 caesarCipher.py"
 ```bash
 # Be sure to type "python3" and not just "python"
 # I spent over an hour debugging on this. 
 # Don't make my mistake.
 
-python3 caesarCipherPractice.py
+python3 caesarCipher.py
 ```
 + Run the following commands:
 ```bash

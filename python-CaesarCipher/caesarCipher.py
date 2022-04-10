@@ -75,7 +75,7 @@ for letter in message:
 
     # Store encrypted/decrypted number in translated
 
-        translated += letter
+        translated += letters[num]
     else:
         # Add letter without encrypting or decrypting
         translated += letter    
