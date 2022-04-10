@@ -1,36 +1,36 @@
 #!/usr/bin/env python3
 
-# This program hacks messages ecnrypted with the Caesar Cipher algorithm by doing a brute force attack against every possible key.
+# This program hacks messages encrypted with the Caesar Cipher algorithm by doing a brute force attack against every possible key.
 
 # Let the user specify the message to hack.
-
-print("Enter the encrypted Caesar cipher message to hack.")
+print("Enter the message you'd like to decrypt:")
 message = input("> ")
 
 # Every possible symbol that can be encrypted/decrypted.
 # This must watch the letters used when encrypting the message.
 
-letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ,.?;:"
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 for key in range(len(letters)): # Loop through every possible key
     translated = "" # empty variable for storage
-
-    # Decrypt each symbol in the message.
-    for letter in message: # key value pair
+    
+    # Decrypt each symbol in the message.    
+    for letter in message: # Key value pair
         if letter in letters:
             num = letters.find(letter) # Get the letter address
             num -= key # Decrypt the number
-
-            # Handle the wrap-around if num is less than 0.
+            
+            # Handle the wrap-around if number is less than zero
             if num < 0:
                 num += len(letters)
 
-            # Store decrypted number's address
-            translated += letters[num] 
-        else:
-            # Add the letter without decrypting.
-            translated += letter
+        # Store crypted number's address
+        translated += letters[num]
 
-    # Display the key being tested
-    # Display the decrypted text.
-    print("Key #{}: {}".format(key, translated))
+        # Add letter without decrypting.
+    else:
+        translated = letter
+
+# Display the key
+# Display the decrypted message
+print("Key #{}: {}".format(key, translated))
