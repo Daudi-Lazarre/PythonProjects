@@ -11,3 +11,9 @@ This gives our data an (outdated and simple) layer of privacy!
 To counter the former project, this method of penetrations uses a brute force attack.
 In the field of cryptography, a brute force attack tests for all of the possible outcomes in a certain circumstance.
 The great thing about brute force attacks is that it does what humans can do in a fraction of the time.
+
+
+Do you listen to music while you code?
+I do.
+Check out what I was listening to while making these projects [here](https://www.youtube.com/watch?v=GvZOMRGdY1w&t=13323s).
+![Alt Text](https://media.giphy.com/media/JVglf7QjxaZZM2tjfB/giphy.gif)
