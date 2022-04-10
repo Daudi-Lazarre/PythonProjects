@@ -6,6 +6,7 @@ In the context of Caesar Cipher, this means that the computer will test for all 
 
 ## How to run the program
 To run a program, do the following:
++ Get an encrypted message from "CaesarCipher" or online
 + Download the repository
 + Open terminal
 + Navigate to the "python-CaesarHacker" folder
@@ -15,17 +16,8 @@ cd pythonProjects/python-CaesarHacker
 + Enter "python3 caesarHacker.py"
 ```bash
 # Be sure to type "python3" and not just "python"
-# I spent over an hour debugging on this. 
-# Don't make my mistake.
 
 python3 caesarHacker.py
-```
-+ Run the following commands:
-```bash
-pip3 install --upgrade pip
-```
-```bash
-pip3 install pyperclip
 ```
 + Enjoy!
 
