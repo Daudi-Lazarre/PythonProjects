@@ -28,3 +28,5 @@ pip3 install --upgrade pip
 pip3 install pyperclip
 ```
 + Enjoy!
+
+![https://media.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif]
