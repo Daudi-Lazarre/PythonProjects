@@ -33,4 +33,4 @@ for key in range(len(letters)): # Loop through every possible key
 
 # Display the key
 # Display the decrypted message
-    print("Key #{}: {}".format(key, translated))
+    print("\nKey #{}: {}".format(key, translated))
