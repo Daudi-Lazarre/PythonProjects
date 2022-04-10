@@ -9,7 +9,7 @@ message = input("> ")
 # Every possible symbol that can be encrypted/decrypted.
 # This must watch the letters used when encrypting the message.
 
-letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ,.?;:"
 
 for key in range(len(letters)): # Loop through every possible key
     translated = "" # empty variable for storage
