@@ -20,5 +20,3 @@ cd pythonProjects/python-CaesarHacker
 python3 caesarHacker.py
 ```
 + Enjoy!
-
-![Alt Text](https://media.giphy.com/media/JVglf7QjxaZZM2tjfB/giphy.gif)

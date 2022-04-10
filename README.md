@@ -14,6 +14,8 @@ The great thing about brute force attacks is that it does what humans can do in 
 
 
 Do you listen to music while you code?
+
 I do.
+
 Check out what I was listening to while making these projects [here](https://www.youtube.com/watch?v=GvZOMRGdY1w&t=13323s).
 ![Alt Text](https://media.giphy.com/media/JVglf7QjxaZZM2tjfB/giphy.gif)
