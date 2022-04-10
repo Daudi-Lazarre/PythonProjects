@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# This program hacks messages ecnrypted with the Caesar Cipher algorithm by doing a brute force attack against every possible key.
+# This program hacks messages encrypted with the Caesar Cipher algorithm by doing a brute force attack against every possible key.
 
 # Let the user specify the message to hack.
 

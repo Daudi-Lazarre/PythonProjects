@@ -29,7 +29,7 @@ for key in range(len(letters)): # Loop through every possible key
 
         # Add letter without decrypting.
         else:
-            translated = letter
+            translated += letter
 
 # Display the key
 # Display the decrypted message
