@@ -12,7 +12,11 @@ To counter the former project, this method of penetrations uses a brute force at
 In the field of cryptography, a brute force attack tests for all of the possible outcomes in a certain circumstance.
 The great thing about brute force attacks is that it does what humans can do in a fraction of the time.
 
-
+# Substitution Cipher
+Similar to Caesar Cipher, Substitution cipher is another form of encryption - the main difference being the potential outcomes of encryption.
+In this form of encryption, one letter is substituted for another letter. As a result, the letter A has 26 possible substitutions, B has 25, C has 24, and so on.
+There are way too many keys for our computer to brute force this - even our caesar hacker program wouldn't work on it. However, this does not make the subsitution cipher program
+infallible.
 
 ## Do you listen to music while you code?
 
