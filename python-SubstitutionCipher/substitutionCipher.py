@@ -28,13 +28,13 @@ def main():
         
     # Let the user enter the key to use.
     while True: # Keep asking the user to enter a valid key
-        print("Specify the key to use.")
+        print("Specify the key to use...")
         if myMode == "encrypt":
-            print("... or enter RANDOM to have one generated for you.")
+            print(" or enter RANDOM to have one generated for you.")
             response = input("> ").upper()
             if response == "RANDOM":
                 myKey = generateRandomKey()
-                print("The key is {}. KEEP THIS SECRET.".format(myKey))
+                print("The key is '{}'. KEEP THIS SECRET.".format(myKey))
                 break
             else:
                 if checkKey(response):
@@ -50,7 +50,7 @@ def main():
         translated = encryptMessage(myMessage, myKey)
     elif myMode == "decrypt":
         translated = decryptMessage(myMessage, myKey)
-    #### CODE YELLOW
+    #### CODE YELLOW: Enc
     
     # Display the results
     print("The %sed message is:" % (myMode))
@@ -58,14 +58,14 @@ def main():
 
     try:
         pyperclip.copy(translated)
-        print("Full %sed text sopied to clipboard." % (myMode))
+        print("Full %sed text copied to clipboard." % (myMode))
     except:
         pass # Do nothing if pyperclip is not installed
 
 def checkKey(key):
     """" Return True if key is valid. Otherwise return False."""
     keyList = list(key)
-    lettersList = list(LETTERS)
+    lettersList = list(letters)
     keyList.sort()
     if keyList!= lettersList:
         print("There is an error in the key or symbol set.")
@@ -83,7 +83,7 @@ def decryptMessage(message, key):
 def translateMessage(message, key, mode):
     """ Encrypt or decrypt the message using the key."""
     translated = ""
-    charsA = LETTERS
+    charsA = letters
     charsB = key
 
     if mode == "decrypt":
@@ -101,14 +101,14 @@ def translateMessage(message, key, mode):
             else:
                 translated += charsB[symIndex].lower()
         else:
-            # The symbol is not in LETTERS, just add it unchanged.
+            # The symbol is not in letters, just add it unchanged.
             translated += symbol
 
         return translated
 
 def generateRandomKey():
     """ Generate and return a random encryption key."""
-    key = list(LETTERS) # Get a list from the LETTERS string
+    key = list(letters) # Get a list from the letters string
     random.shuffle(key) # Randomize the list
     return "".join(key) # Get a string from the list
 
