@@ -65,5 +65,53 @@ def main():
 def checkKey(key):
     """" Return True if key is valid. Otherwise return False."""
     keyList = list(key)
-    letterslist = list(LETTERS)
-    keylist.sort()
+    lettersList = list(LETTERS)
+    keyList.sort()
+    if keyList!= lettersList:
+        print("There is an error in the key or symbol set.")
+        return False
+    return True
+
+def encryptMessage(message, key):
+    """ Encrypt the message using the key."""
+    return(translateMessage(message, key, "encrypt"))
+
+def decryptMessage(message, key):
+    """ Decrypt the message using the key."""
+    return(translateMessage(message, key, "decrypt"))
+
+def translateMessage(message, key, mode):
+    """ Encrypt or decrypt the message using the key."""
+    translated = ""
+    charsA = LETTERS
+    charsB = key
+
+    if mode == "decrypt":
+        # For decrypting, we cane use the same code as encrypting because
+        # we just need to swap where they and LETTER strings are used.
+        charsA, charsB = charsB, charsA
+
+    for symbol in message:
+        if symbol.upper() in charsA:
+            # Encrypt/decrypt the symbol
+            symIndex = charsA.find(symbol.upper())
+            
+            if symbol.isupper():
+                translated += charsB[symIndex].upper()
+            else:
+                translated += charsB[symIndex].lower()
+        else:
+            # The symbol is not in LETTERS, just add it unchanged.
+            translated += symbol
+
+        return translated
+
+def generateRandomKey():
+    """ Generate and return a random encryption key."""
+    key = list(LETTERS) # Get a list from the LETTERS string
+    random.shuffle(key) # Randomize the list
+    return "".join(key) # Get a string from the list
+
+# If this program was run (instead of imported), run the program:
+if __name__ == '__main__':
+    main()
