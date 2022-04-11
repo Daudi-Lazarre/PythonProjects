@@ -6,7 +6,7 @@
 print("Enter the message you'd like to decrypt:")
 message = input("> ")
 
-# Every possible symbol that can be encrypted/decrypted.
+# Loop thru every possible letter that can be encrypted/decrypted.
 # This must watch the letters used when encrypting the message.
 
 letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ,.?;:"
@@ -24,7 +24,7 @@ for key in range(len(letters)): # Loop through every possible key
             if num < 0:
                 num += len(letters)
 
-        # Store crypted number's address
+        # Store encrypted number's address
             translated += letters[num]
 
         # Add letter without decrypting.
