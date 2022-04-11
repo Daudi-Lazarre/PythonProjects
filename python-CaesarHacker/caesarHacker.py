@@ -25,7 +25,7 @@ for key in range(len(letters)): # Loop through every possible key
                 num += len(letters)
 
         # Store encrypted number's address
-            translated += letter
+            translated += letters[num]
 
         # Add letter without decrypting.
         else:
