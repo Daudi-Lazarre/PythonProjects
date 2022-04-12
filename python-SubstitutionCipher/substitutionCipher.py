@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+
+
+
+
+
 import random
 
 try:
@@ -50,7 +55,6 @@ def main():
         translated = encryptMessage(myMessage, myKey)
     elif myMode == "decrypt":
         translated = decryptMessage(myMessage, myKey)
-    #### CODE YELLOW: Enc
     
     # Display the results
     print("The %sed message is:" % (myMode))
