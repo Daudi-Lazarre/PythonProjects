@@ -12,6 +12,12 @@ To counter the former project, this method of penetrations uses a brute force at
 In the field of cryptography, a brute force attack tests for all of the possible outcomes in a certain circumstance.
 The great thing about brute force attacks is that it does what humans can do in a fraction of the time.
 
+# ROT13 Cipher
+This is the simplest of all encryption methods because the key is fixed to thirteen spaces. 
+In other words, A becomes N, B becomes 0, C becomes P, etc.
+Due to its simplicity, it makes for a great project, and an even greater vulnerability for a legitimate hacker looking to interpret your secret messages.
+This form of encryption is typically used for non-sensitive information such as spoilers or trivia answers.
+
 # Substitution Cipher
 Similar to Caesar Cipher, Substitution cipher is another form of encryption - the main difference being the potential outcomes of encryption.
 In this form of encryption, one letter is substituted for another letter. As a result, the letter A has 26 possible substitutions, B has 25, C has 24, and so on.
