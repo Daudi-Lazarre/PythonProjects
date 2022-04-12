@@ -91,24 +91,25 @@ def translateMessage(message, key, mode):
     charsB = key
 
     if mode == "decrypt":
-        # For decrypting, we cane use the same code as encrypting because
-        # we just need to swap where they and LETTER strings are used.
+        # same code is used for encryption
+        # We only have to swap where the letter and key are used.
+
         charsA, charsB = charsB, charsA
 
-    for symbol in message:
-        if symbol.upper() in charsA:
-            # Encrypt/decrypt the symbol
-            symIndex = charsA.find(symbol.upper())
-            
-            if symbol.isupper():
-                translated += charsB[symIndex].upper()
+        # Loop through each symbol in the message
+        for symbol in message:
+            if symbol.upper() in charsA:
+                # Encrypt/decrypt the symbol
+                symIndex = charsA.find(symbol.upper())
+                if symbol.isupper():
+                    translated += charsB[symIndex].upper()
+                else:
+                    translated = charsB[symIndex].lower()
             else:
-                translated += charsB[symIndex].lower()
-        else:
-            # The symbol is not in letters, just add it unchanged.
-            translated += symbol
+                # Add symbol unchanged if it is not in letters
+                translated += symbol
 
-        return translated
+            return translated
 
 def generateRandomKey():
     """ Generate and return a random encryption key."""
