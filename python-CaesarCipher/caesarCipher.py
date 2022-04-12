@@ -15,7 +15,7 @@ print("until now.")
 # Ask user: encrypt or decrypt?
 
 while True:
-    print("\nWould you like to (e)ncrypt or (d)ecrypt?")
+    print("\nWould you like to (e)ncrypt or (d)encrypt?")
     response = input("> ").lower()
 
     if response.startswith("e"):
@@ -24,7 +24,7 @@ while True:
     elif response.startswith("d"):
         mode = "decrypt"
         break
-    print("Enter the letter e or d")
+    print("Enter the letter e or d.")
 
 # User enters their choice.
 
