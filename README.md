@@ -18,11 +18,8 @@ In other words, A becomes N, B becomes 0, C becomes P, etc.
 Due to its simplicity, it makes for a great project, and an even greater vulnerability for a legitimate hacker looking to interpret your secret messages.
 This form of encryption is typically used for non-sensitive information such as spoilers or trivia answers.
 
-# Substitution Cipher
-Similar to Caesar Cipher, Substitution cipher is another form of encryption - the main difference being the potential outcomes of encryption.
-In this form of encryption, one letter is substituted for another letter. As a result, the letter A has 26 possible substitutions, B has 25, C has 24, and so on.
-There are way too many keys for our computer to brute force this - even our caesar hacker program wouldn't work on it. However, this does not make the subsitution cipher program
-infallible.
+# Vigènere Cipher
+
 
 ## Do you listen to music while you code?
 
