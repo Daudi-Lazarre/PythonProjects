@@ -18,8 +18,10 @@ In other words, A becomes N, B becomes 0, C becomes P, etc.
 Due to its simplicity, it makes for a great project, and an even greater vulnerability for a legitimate hacker looking to interpret your secret messages.
 This form of encryption is typically used for non-sensitive information such as spoilers or trivia answers.
 
-# Vigènere Cipher
-
+# Vigenère Cipher
+In contrast to ROT13 cipher, the Vigenère cipher is the most complicated of the four encryption processes. This form of encryption involves multiple keys for multiple letters. 
+Here's an example: the key "CAT" would translate to a key of 2, 0 and 7, respectively.
+For this reason, the Vigenère cipher is strong and is too big to brute-force.
 
 ## Do you listen to music while you code?
 
